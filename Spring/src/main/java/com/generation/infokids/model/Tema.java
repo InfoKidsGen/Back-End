@@ -17,15 +17,15 @@ public class Tema {
 	private long id;
 	
 	@NotBlank(message = "O atributo assunto não pode estar vazio.")
-	@Size(max = 155 )
+	@Size(max = 155, message="Limite máximo de 155 caracteres" )
 	private String assunto;
 	
 	@NotBlank(message = "O atributo público alvo não pode estar vazio.")
-	@Size(max = 155 )
+	@Size(max = 155, message="Limite máximo de 155 caracteres" )
 	private String publico_alvo;
 	
 	@NotBlank(message = "O atributo idioma não pode estar vazio.")
-	@Size(max = 155 )
+	@Size(max = 155, message="Limite máximo de 155 caracteres" )
 	private String idioma;
 
 	public long getId() {

@@ -22,7 +22,7 @@ public class Tema {
 	
 	@NotBlank(message = "O atributo público alvo não pode estar vazio.")
 	@Size(max = 155, message="Limite máximo de 155 caracteres" )
-	private String publico_alvo;
+	private String publicoAlvo;
 	
 	@NotBlank(message = "O atributo idioma não pode estar vazio.")
 	@Size(max = 155, message="Limite máximo de 155 caracteres" )
@@ -44,12 +44,12 @@ public class Tema {
 		this.assunto = assunto;
 	}
 
-	public String getPublico_alvo() {
-		return publico_alvo;
+	public String getPublicoAlvo() {
+		return publicoAlvo;
 	}
 
-	public void setPublico_alvo(String publico_alvo) {
-		this.publico_alvo = publico_alvo;
+	public void setPublicoAlvo(String publico_alvo) {
+		this.publicoAlvo = publico_alvo;
 	}
 
 	public String getIdioma() {

@@ -38,9 +38,20 @@ public class Usuario {
 	@Size(max = 100, message = "Limite máximo de 100 caracteres.")
 	private String perfis;
 	
-	@OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
+	@NotBlank
+	private String foto;
+	
+	@OneToMany(mappedBy = "usuario", cascade = CascadeType.REMOVE)
 	@JsonIgnoreProperties("usuario")
-	private List <Postagem> postagem;
+	private List<Postagem> postagem;
+	
+	public String getFoto() {
+		return foto;
+	}
+
+	public void setFoto(String foto) {
+		this.foto = foto;
+	}
 
 	public long getId() {
 		return id;

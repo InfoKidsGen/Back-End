@@ -57,12 +57,12 @@ public class Postagem {
 		this.id = id;
 	}
 
-	public String getTítulo() {
+	public String getTitulo() {
 		return titulo;
 	}
 
-	public void setTítulo(String título) {
-		this.titulo = título;
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
 	}
 
 	public String getTexto() {
@@ -96,7 +96,16 @@ public class Postagem {
 	public void setTema(Tema tema) {
 		this.tema = tema;
 	}
-	
+
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}
+
+		
 	
 	
 }
